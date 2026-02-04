@@ -1,0 +1,307 @@
+body.form-page {
+  background-color: #a7f3d0;
+  background-image: url("5c146b50-a192-48a5-8087-021bbf8ce31c.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Poppins', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-main-content {
+  flex: 1;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fixed width for the form */
+.form-wrapper {
+  width: 700px;
+  max-width: 100%;
+  background-color: rgba(68, 109, 98, 0.4);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(0, 217, 163, 0.3);
+}
+
+.form-header-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Consistent font style */
+.registration-form {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Fieldset styling */
+.form-fieldset {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 217, 163, 0.3);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.form-fieldset legend {
+  color: #00d9a3;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0 15px;
+  background: rgba(68, 109, 98, 0.85);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 217, 163, 0.3);
+}
+
+/* Label styling */
+label {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Border and border-radius for inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #00d9a3;
+  box-shadow: 0 0 15px rgba(0, 217, 163, 0.4);
+}
+
+/* Placeholder */
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Radio and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #00d9a3;
+  width: auto;
+  margin-bottom: 0;
+}
+
+/* Radio button labels - inline */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Gender field container */
+.gender-group {
+  margin-bottom: 20px;
+}
+
+.gender-group > label:first-child {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Color Input */
+input[type="color"] {
+  width: 80px;
+  height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+/* Range Input */
+input[type="range"] {
+  width: calc(100% - 100px);
+  margin-right: 15px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+#rangeValue {
+  color: #00d9a3;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  background: rgba(0, 217, 163, 0.15);
+  border-radius: 8px;
+  border: 2px solid rgba(0, 217, 163, 0.3);
+  display: inline-block;
+  min-width: 50px;
+  text-align: center;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* File Input */
+input[type="file"] {
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(0, 217, 163, 0.4);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Readonly and Disabled */
+input[readonly] {
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+  border-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+input[disabled] {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Select Dropdown */
+select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300d9a3' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  padding-right: 40px;
+}
+
+select option {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Button styling with hover effect */
+button {
+  background-color: #00d9a3;
+  color: #1a1a1a;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Poppins', Arial, sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #00ffbb;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 217, 163, 0.5);
+}
+
+button[type="reset"] {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 2px solid #00d9a3;
+}
+
+button[type="reset"]:hover {
+  background-color: rgba(0, 217, 163, 0.2);
+  border-color: #00ffbb;
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-wrapper {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .form-fieldset {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 2rem;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
